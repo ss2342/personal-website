@@ -1,8 +1,8 @@
 import "./education.scss"
 
-export default function Contact() {
+export default function Education() {
     return (
-        <div className="education">
+        <div className="education" id="education">
             Education
         </div>
     )
