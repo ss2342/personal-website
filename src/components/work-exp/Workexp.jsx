@@ -1,8 +1,8 @@
 import "./workexp.scss"
 
-export default function Contact() {
+export default function Workexp() {
     return (
-        <div className="workexp">
+        <div className="workexp" id="workexp">
             Work Experience
         </div>
     )
