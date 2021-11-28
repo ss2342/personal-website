@@ -5,11 +5,13 @@ import Workexp from "./components/work-exp/Workexp"
 import Education from "./components/education/Education"
 import Contact from "./components/contact/Contact"
 import "./app.scss"
+import { useState } from "react"
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="app">
-      <Navbar/>
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
         <Portfolio/>
