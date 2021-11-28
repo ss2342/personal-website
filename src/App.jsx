@@ -4,6 +4,7 @@ import Portfolio from "./components/portfolio/Portfolio"
 import Workexp from "./components/work-exp/Workexp"
 import Education from "./components/education/Education"
 import Contact from "./components/contact/Contact"
+import "./app.scss"
 
 function App() {
   return (
