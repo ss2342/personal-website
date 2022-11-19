@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 import { useEffect } from "react"
 
 export default function Skills() {
+  console.log("The public url is: ", process.env.PUBLIC_URL)
     useEffect(() => {
         Aos.init({duration: 2000});
     })
@@ -12,31 +13,31 @@ export default function Skills() {
   const data = [
     {
       id: "1",
-      icon: "./assets/ml.png",
-      title: "Machine Learning",
+      icon: process.env.PUBLIC_URL + "/assets/ml.png",
+      title: "Deep Learning",
       img:
-        "./assets/ai_tech.png",
+      process.env.PUBLIC_URL + "/assets/ai_tech.png",
     },
     {
       id: "2",
-      icon: "./assets/swe.png",
+      icon: process.env.PUBLIC_URL + "/assets/swe.png",
       title: "Languages",
       img:
-        "./assets/languages.png",
+        process.env.PUBLIC_URL + "/assets/languages.png",
     },
     {
       id: "3",
-      icon: "./assets/sde.png",
+      icon: process.env.PUBLIC_URL + "/assets/sde.png",
       title: "Software Development",
       img:
-        "./assets/swetools.png",
+      process.env.PUBLIC_URL + "/assets/swetools.png",
     },
     {
         id: "4",
-        icon: "./assets/cloud-services.png",
+        icon: process.env.PUBLIC_URL + "/assets/cloud-services.png",
         title: "Cloud and Container Tools",
         img:
-          "./assets/cloud.png",
+        process.env.PUBLIC_URL + "/assets/cloud.png",
       },
   ];
 
@@ -78,13 +79,13 @@ export default function Skills() {
         ))}
       </div>
       <img
-        src="assets/arrow.png"
+        src={process.env.PUBLIC_URL + "/assets/arrow.png"}
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/arrow.png"
+        src={process.env.PUBLIC_URL + "/assets/arrow.png"}
         className="arrow right"
         alt=""
         onClick={() => handleClick()}

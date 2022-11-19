@@ -48,7 +48,7 @@ const TimelineData = [
         },
     },
     {
-        text: 'Incoming Software Engineer Intern at MITRE',
+        text: 'Started as Software Engineer Intern at MITRE',
         date: 'January 2022',
         category: {
             tag: 'professonal',

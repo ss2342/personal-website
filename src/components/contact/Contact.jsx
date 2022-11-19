@@ -28,7 +28,7 @@ export default function Contact() {
     return (
         <div data-aos="fade-up" className="contact" id="contact">
         <div className="left">
-            <img src="assets/shake.svg" alt="" />
+            <img src={process.env.PUBLIC_URL + "/assets/shake.svg"} alt="" />
         </div>
         <div className="right">
             <h2>Let's connect!</h2>
