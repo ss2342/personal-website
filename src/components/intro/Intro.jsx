@@ -23,7 +23,7 @@ export default function Intro() {
         <div data-aos="fade-up" className="intro" id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="assets/satyen.png" alt=""/>
+                    <img src={process.env.PUBLIC_URL + "/assets/satyen.png"} alt=""/>
                 </div>
             </div>
             <div className="right">
@@ -33,7 +33,7 @@ export default function Intro() {
                     <h3>Machine Learning <span ref={textRef}></span></h3>
                 </div>
                 <a href="#about">
-                    <img src="assets/down.png" alt=""/>
+                    <img src={process.env.PUBLIC_URL + "/assets/down.png"} alt=""/>
                 </a>
             </div>
         </div>
